@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import characters from '../mockHorrorCharacters'
+import { NavLink } from 'react-router-dom'
 
 class HorrorIndex extends Component {
   render() {
@@ -9,7 +10,9 @@ class HorrorIndex extends Component {
         <h3>I am the HorrorIndex</h3>
         {this.props.characters && this.props.characters.map(characters=>{
           return(
-            <h2 key={characters.id}>{characters.name}</h2>
+            <ul>
+            <NavLink to={`/horrorshow/${characters.id}`}>{characters.name}</NavLink>
+            </ul>
           )
         })}
       </>
