@@ -6,16 +6,19 @@ import HorrorShow from '../HorrorShow'
 Enzyme.configure({ adapter: new Adapter()})
 
 describe("When horrorshow loads", ()=>{
+    let character ={ 
+    id: 2,
+    name: "Micheal Myers",
+    age: 63,
+    enjoys: "HALLOWEEN!!!"}
     //arrange
     let horrorshow
     beforeEach(()=>{
-        horrorshow = shallow(<HorrorShow character={ this.props.character }/>)
+        horrorshow = shallow(<HorrorShow character={character}/>)
     })
 it('displays a characters page',()=>{
     const skeleton = horrorshow.find('h2')
     //assert
-    expect(skeleton.childAt(`${id}`)).toEqual(`This is ${this.props.character.name}. 
-    He is ${this.props.character.age} years old.
-    He enjoys ${this.props.character.enjoys}.`)
+    expect(skeleton.length).toEqual(3)
     })
 })
