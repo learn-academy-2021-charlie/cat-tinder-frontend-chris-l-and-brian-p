@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 
-class Footer extends Component {
+class NotFound extends Component {
   render() {
     return (
-      <>
+      <div className='notfound'>
+      
         
-      </>
+          nothing here!
+        
+      </div>
     )
   }
 }
-export default Footer
+export default NotFound

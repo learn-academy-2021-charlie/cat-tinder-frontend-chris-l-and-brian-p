@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-class Footer extends Component {
+class HorrorShow extends Component {
   render() {
     return (
       <>
-        
+       <h1>I am HorrorShow</h1> 
       </>
     )
   }
 }
-export default Footer
+export default HorrorShow

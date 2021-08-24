@@ -1,38 +1,20 @@
-.App {
-  text-align: center;
+.notfound{
+  background-image: url("https://images.creativemarket.com/0.1.0/ps/1733718/300/200/m1/fpnw/wm0/creative_1-.jpg?1475759208&s=428e2085800d8677e133ac71d53a810b");
+  background-size: cover;
+  background-repeat:no-repeat;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+  font-family: cursive;
+  font-size: 60px;
+  background-color: black;
+  color: orange;
+  background-image: url("https://www.drawinghowtodraw.com/stepbystepdrawinglessons/wp-content/uploads/2011/09/400x400-spider-web.png");
+  background-size: 110px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer{
+  background-color: black;
+  color: orange;
+  position:fixed; 
+  bottom: 0;
 }
