@@ -32,7 +32,7 @@ class App extends Component {
 
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/horrorindex" component={HorrorIndex} />
+          <Route path="/horrorindex" render={ (props) => <HorrorIndex characters={ this.state.characters } /> } /> 
           <Route path="/horrorshow" component={HorrorShow} />
           <Route path="/horroredit" component={HorrorEdit} />
           <Route path="/horrornew" component={HorrorNew} />
