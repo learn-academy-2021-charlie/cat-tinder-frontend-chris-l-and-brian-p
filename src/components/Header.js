@@ -8,9 +8,9 @@ const Header = (props) => {
   
     return (
       <div>
-          <header>Horror Tinder</header>
+            <h1>Horror Tinder</h1>
         <Navbar color="faded" light>
-          <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand>
+          <NavbarBrand href="/" className="mr-auto"></NavbarBrand>
           <NavbarToggler onClick={toggleNavbar} className="mr-2" />
           <Collapse isOpen={!collapsed} navbar>
             <Nav navbar>
@@ -27,4 +27,4 @@ const Header = (props) => {
     );
   }
 
-export default Header  
+export default Header; 

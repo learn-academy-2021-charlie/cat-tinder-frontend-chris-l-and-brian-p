@@ -11,9 +11,9 @@ describe("When header appears", ()=>{
     beforeEach(()=>{
         header = shallow(<Header/>)
     })
-it('displays a hamburger menu icon',()=>{
-    const navbar = header.find('NavBarToggler')
+it('displays a pumpkin menu icon',()=>{
+    const pumpkin = header.find('NavbarToggler')
     //assert
-    expect(navbar.length).toEqual(1)
+    expect(pumpkin.length).toEqual(1)
     })
 })
