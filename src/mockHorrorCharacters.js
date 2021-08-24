@@ -3,7 +3,7 @@ let characters = [
       id: 1,
       name: "Jason Voorhees ",
       age: 75,
-      enjoys: "NOT WATER!!"
+      enjoys: "... NOT WATER!!"
     },
     {
       id: 2,
@@ -15,7 +15,7 @@ let characters = [
       id: 3,
       name: "Pennywise",
       age: 12000,
-      enjoys: "CIRCUS"
+      enjoys: "THE CIRCUS"
     }
   ]
   export default characters

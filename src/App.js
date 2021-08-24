@@ -32,8 +32,12 @@ class App extends Component {
 
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/horrorindex" component={HorrorIndex} />
-          <Route path="/horrorshow" component={HorrorShow} />
+          <Route path="/horrorindex" render={ (props) => <HorrorIndex characters={ this.state.characters } /> } /> 
+          <Route path="/horrorshow/:id" render={ (props) => {
+            let id = props.match.params.id
+            let character = this.state.characters.find(character => character.id === +id)
+            return <HorrorShow character={ character } />
+          }} />
           <Route path="/horroredit" component={HorrorEdit} />
           <Route path="/horrornew" component={HorrorNew} />
           <Route component={NotFound} />
