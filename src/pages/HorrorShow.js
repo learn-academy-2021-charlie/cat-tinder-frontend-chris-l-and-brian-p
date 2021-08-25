@@ -1,15 +1,24 @@
 import React, { Component } from 'react'
+import {NavLink} from 'react-router-dom'
+import {Button, Card, CardTitle, CardText} from 'reactstrap'
 
 class HorrorShow extends Component {
   render() {
-    console.log(this.props.character)
+    let {character} =this.props
     return (
-      <>
-       <h2>This is {this.props.character.name}.</h2> 
-       <h2>He is {this.props.character.age} years old.</h2> 
-       <h2>He enjoys {this.props.character.enjoys}.</h2> 
-      </>
-    )
-  }
+      <div>
+      {character &&
+       <Card>
+         <CardTitle>Hi! My name is {character.name}</CardTitle>
+         <CardText>I am {character.age} years old</CardText>
+         <CardText>I enjoy {character.enjoys}</CardText>
+         <NavLink to={`/horroredit/${character.id}`}>
+           <Button>Edit Character Profile</Button>
+         </NavLink>
+       </Card>
+      }
+    </div>
+  )
+}
 }
 export default HorrorShow

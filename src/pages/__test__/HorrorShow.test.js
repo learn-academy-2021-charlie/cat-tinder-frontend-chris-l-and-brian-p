@@ -17,8 +17,8 @@ describe("When horrorshow loads", ()=>{
         horrorshow = shallow(<HorrorShow character={character}/>)
     })
 it('displays a characters page',()=>{
-    const skeleton = horrorshow.find('h2')
+    const skeleton = horrorshow.find('div')
     //assert
-    expect(skeleton.length).toEqual(3)
+    expect(skeleton.length).toEqual(1)
     })
 })

@@ -1,18 +1,18 @@
 import React from 'react'
 import Enzyme, { shallow } from 'enzyme'
 import  Adapter  from 'enzyme-adapter-react-16'
-import Home from '../Home'
+import HorrorEdit from '../HorrorEdit'
 
 Enzyme.configure({ adapter: new Adapter()})
 
-describe("When home shows", ()=>{
+describe("When horroredit shows", ()=>{
     //arrange
-    let home
+    let horroredit
     beforeEach(()=>{
-        home = shallow(<Home/>)
+        horroredit = shallow(<HorrorEdit/>)
     })
-it('displays a home',()=>{
-    const skeleton = home.find('div')
+it('displays a edit button',()=>{
+    const skeleton = horroredit.find('Form')
     //assert
     expect(skeleton.length).toEqual(1)
     })
