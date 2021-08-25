@@ -24,6 +24,11 @@ class App extends Component {
         characters: characters
       }
     }
+
+    createNewCharacter = (newcharacter) => {
+      console.log(newcharacter)
+    }
+
     render() { 
       console.log(this.state.characters)
     return (
@@ -32,14 +37,16 @@ class App extends Component {
 
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/horrorindex" render={ (props) => <HorrorIndex characters={ this.state.characters } /> } /> 
+          <Route path="/horrorindex" render={(props) => <HorrorIndex characters={ this.state.characters } /> } 
+          /> 
           <Route path="/horrorshow/:id" render={ (props) => {
             let id = props.match.params.id
             let character = this.state.characters.find(character => character.id === +id)
             return <HorrorShow character={ character } />
           }} />
           <Route path="/horroredit" component={HorrorEdit} />
-          <Route path="/horrornew" component={HorrorNew} />
+          <Route path="/horrornew" render={ (props) => <HorrorNew createNewCharacter={ this.createNewCharacter} /> } 
+          />
           <Route component={NotFound} />
         </Switch>
 
