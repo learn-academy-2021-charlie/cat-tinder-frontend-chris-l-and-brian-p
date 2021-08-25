@@ -28,6 +28,10 @@ class App extends Component {
     createNewCharacter = (newcharacter) => {
       console.log(newcharacter)
     }
+    updateCharacter = (editcharacter, id) => {
+      console.log("character:", editcharacter)
+      console.log("id:", id)
+    }
 
     render() { 
       console.log(this.state.characters)
@@ -44,7 +48,11 @@ class App extends Component {
             let character = this.state.characters.find(character => character.id === +id)
             return <HorrorShow character={ character } />
           }} />
-          <Route path="/horroredit" component={HorrorEdit} />
+          <Route path={"/horroredit/:id"} render={ (props) => {
+            let id = props.match.params.id
+            let character = this.state.characters.find(character => character.id === +id)
+            return <HorrorEdit updateCharacter={ this.updateCharacter } character={ character } />
+          }} /> 
           <Route path="/horrornew" render={ (props) => <HorrorNew createNewCharacter={ this.createNewCharacter} /> } 
           />
           <Route component={NotFound} />

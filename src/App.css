@@ -18,3 +18,20 @@ footer{
   position:fixed; 
   bottom: 0;
 }
+.home{
+  background-image: url("https://www.pymnts.com/wp-content/uploads/2017/09/Halloween.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 102vh;
+
+}
+
+/* p{
+  font-size: 100px;
+  font-family:cursive;
+  color: white;
+  background-color: orangered;
+  background-size: 50px;
+  background-image: url("https://www.thoughtco.com/thmb/nKlWzmQaLOSHpNubqkIhL0zwDuU=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-138687537-56a9a2f93df78cf772a91e74.jpg");
+} */
+
