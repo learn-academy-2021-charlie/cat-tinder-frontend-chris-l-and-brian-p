@@ -29,7 +29,7 @@ class HorrorNew extends Component {
   render() {
     return (
       <>
-        <h2>i am HorrorNew</h2>
+        <h3>Create a new Character</h3>
         <Form>
           <FormGroup>
             <Label>Name</Label>

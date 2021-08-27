@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
-import { NavLink } from 'reactstrap';
+import { NavLink } from 'react-router-dom'
 
 class Header extends Component{ 
   render(){ 
   
     return (
-      <header>
-            <h1>Horror Tinder</h1>
-      
-        <div className="nav-links">
-          <ul>
-            <NavLink to="/horrorindex">Meet the Characters</NavLink>
-          </ul>
-          <ul>
-            <NavLink to="/horrornew">Add a Characters</NavLink>
-          </ul>
-        </div>
+      <header className="nav-links">
+            <h1>
+
+                <NavLink to="/" className="nav-links">Home</NavLink>
+              <br />
+                <NavLink to="/horrorindex" className="nav-links">Meet the Characters</NavLink>
+              <br />
+                <NavLink to="/horrornew" className="nav-links">Add a Character</NavLink>
+            
+            </h1>
       </header>
      )
       }
