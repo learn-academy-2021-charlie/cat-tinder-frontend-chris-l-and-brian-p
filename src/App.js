@@ -21,12 +21,32 @@ class App extends Component {
     constructor(props){
       super(props)
       this.state = {
-        characters: characters
+        characters: []
       }
     }
 
+    componentDidMount(){
+      this.characterIndex()
+    }
+
+    characterIndex = () => {
+      fetch("http://localhost:3000/characters")
+      .then(response => response.json())
+      .then(charactersArray => this.setState({ characters: charactersArray}))
+      .catch(errors => console.log("character read errors:", errors))
+    }
+
     createNewCharacter = (newcharacter) => {
-      console.log(newcharacter)
+     fetch("http://localhost:3000/characters", {
+       body:JSON.stringify(newcharacter),
+       headers:{
+         "Content-Type": "application/json"
+       },
+       method:"POST"
+     })
+     .then(response => response.json())
+     .then(payload => this.characterIndex())
+     .catch(errors => console.log("character create errors:", errors))
     }
     updateCharacter = (editcharacter, id) => {
       console.log("character:", editcharacter)

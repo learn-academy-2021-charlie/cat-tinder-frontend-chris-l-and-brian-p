@@ -18,13 +18,13 @@ footer{
   position:fixed; 
   bottom: 0;
 }
-.home{
+.nav-links {  display: flex;  flex-direction: row;  align-items: flex-end;  padding-right: 50px;}
+/* .home{
   background-image: url("https://www.pymnts.com/wp-content/uploads/2017/09/Halloween.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 102vh;
-
-}
+  height: 102vh; 
+} */
 
 /* p{
   font-size: 100px;
