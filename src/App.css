@@ -11,27 +11,63 @@ h1{
   color: orange;
   background-image: url("https://www.drawinghowtodraw.com/stepbystepdrawinglessons/wp-content/uploads/2011/09/400x400-spider-web.png");
   background-size: 110px;
-}
-footer{
-  background-color: black;
-  color: orange;
-  position:fixed; 
-  bottom: 0;
-}
-.home{
-  background-image: url("https://www.pymnts.com/wp-content/uploads/2017/09/Halloween.jpg");
-  background-size: cover;
+  background-position: left;
   background-repeat: no-repeat;
-  height: 102vh;
-
+  display: flex
 }
 
-/* p{
-  font-size: 100px;
-  font-family:cursive;
-  color: white;
-  background-color: orangered;
-  background-size: 50px;
-  background-image: url("https://www.thoughtco.com/thmb/nKlWzmQaLOSHpNubqkIhL0zwDuU=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-138687537-56a9a2f93df78cf772a91e74.jpg");
-} */
+
+
+.nav-links {  
+  display: flex;  
+  flex-direction: row;  
+  align-items: flex-end; 
+  color: orange; 
+  padding-right: 50px;}
+
+  .page-body {
+    text-align: center;
+    margin: 3rem;
+    height: 110vh;
+  }
+
+
+  .index-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+    .card.card-body {
+      width: 300px;
+      background-color: black;
+      margin: 20px;
+      color: orange;
+    }
+    
+    footer {
+      font-size: 20px;
+      position: fixed;
+      bottom: 0;
+      width:auto;
+      background-color: #FFFEF1;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    header {
+      font-size: 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;   
+      background-color: #FFFEF1;
+      display: flex;
+      justify-content: space-around;
+    }
+    .card-show.card.card-body {
+      margin: 0 auto;
+    }
+
+    ul {
+      color: orange;
+    }
 

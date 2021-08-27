@@ -28,8 +28,8 @@ class HorrorNew extends Component {
 
   render() {
     return (
-      <>
-        <h2>i am HorrorNew</h2>
+      <div className="page-body">
+        <h3>Create a new Character</h3>
         <Form>
           <FormGroup>
             <Label>Name</Label>
@@ -66,10 +66,10 @@ class HorrorNew extends Component {
           name="submit"
           onClick={ this.handleSubmit }
         >
-          Create a New Profile
+          Submit your Slasher
         </Button>
         { this.state.success && <Redirect to="/horrorindex" />}
-      </>
+      </div>
     )
   }
 }

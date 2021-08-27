@@ -27,7 +27,7 @@ class HorrorEdit extends Component {
   render() {
     return (
       <>
-      <h1>I am HorrorEdit</h1> 
+      <h3>Edit this Character</h3> 
       <Form>
   <FormGroup>
     <Label>Name</Label>
