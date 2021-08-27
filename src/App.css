@@ -39,8 +39,9 @@ h1{
   }
     .card.card-body {
       width: 300px;
-      background-color: #FFFEF1;
+      background-color: black;
       margin: 20px;
+      color: orange;
     }
     
     footer {

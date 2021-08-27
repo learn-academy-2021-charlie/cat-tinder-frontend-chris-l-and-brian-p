@@ -14,7 +14,7 @@ class HorrorIndex extends Component {
               <Row key={character.id}>
                 <Col sm="6">
                   <Card body>
-                    <CardTitle tag="h5">Hi, my name is {character.name}</CardTitle>
+                    <CardTitle tag="h5"> 🎃 Hi, my name is {character.name} 👻</CardTitle>
                     
                     <NavLink to={`/horrorshow/${character.id}`}><Button>More Info Here</Button></NavLink>
                   </Card>
